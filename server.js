@@ -19,9 +19,7 @@ io.on('connection', client => {
       // let groups = await redisClient.set('groups','BING');
       // let members = await redisClient.get('groups');
       // console.log('members',members);
-
       let receiverId = await redisClient.get(data.receiver);
-
       // console.log('data',client.handshake.query.id,'==>',data.receiver);
       io.to(receiverId).emit('messageFromServer',data);
 
