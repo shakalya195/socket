@@ -1,0 +1,14 @@
+{
+  "name": "node-socket-195",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "http": "0.0.1-security",
+    "redis": "^4.1.0",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {}
+}
